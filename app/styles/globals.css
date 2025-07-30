@@ -1,3 +1,6 @@
+
+/* Light mode Dark mode is not needed so decided to go with a simpler color scheme using colors.css */
+
 @import 'tailwindcss';
 @source '@/app';
 @source '@/lib';
@@ -87,4 +90,4 @@
     --chart-4: hsl(280 65% 60%);
     --chart-5: hsl(340 75% 55%);
   }
-}
+} 

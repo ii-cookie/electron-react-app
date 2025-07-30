@@ -39,6 +39,10 @@ export default defineConfig({
     plugins: [externalizeDepsPlugin()],
   },
   renderer: {
+    server: {
+      port: 5173, // Default Vite port, adjust if needed
+      open: true, // Automatically open the browser
+    },
     root: './app',
     build: {
       rollupOptions: {

@@ -1,0 +1,114 @@
+.header {
+    height: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 1rem 0;
+    user-select: none;
+  }
+  
+  .header-content {
+    position: fixed;
+    width: 100%;
+    height: 140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+   .logo{
+    position: relative;
+    display: flex;
+    transform-origin: 50% 50%;
+    top: 7%;
+   }
+
+  .header .header-content .logo img{
+    position: relative;
+    padding: 0 20px;
+    height: 50px;
+    align-self: center;
+  }
+
+  .header .header-content .logo img.HKPL_logo{
+    position: relative;
+    padding: 0 20px;
+    padding-right: 8px;
+    height: 50px;
+    align-self: center;
+  }
+
+  span{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: 500;
+    align-self: center;
+  }
+  
+
+
+/* vertical line between the pics (lscd logo and hkpl logo) is hard coded, glhf*/
+
+  .vl {
+    border-left: 2px solid var(--primary);
+    height: 50px;
+    position: relative;
+    margin-left: -3px;
+    top: 0;
+  }
+
+  .logo .vl{
+    left: 0%;
+  }
+
+  nav .date-time.vl{
+    height: 80px;
+    position: relative;
+  }
+
+  nav .time-weather.vl{
+    height: 80px;
+    position: relative;
+  }
+
+  nav{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    transform-origin: 50% 50%;
+    top: 25%;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav div {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  
+
+  nav .time{
+    font-size: 50px;
+    font-weight: 700;
+    align-self: center;
+  }
+
+  nav .weather{
+    text-align: left;
+  }

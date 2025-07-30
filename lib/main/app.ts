@@ -26,6 +26,9 @@ export function createAppWindow(): void {
     },
   })
 
+  // Force fullscreen
+  mainWindow.setFullScreen(true);
+
   // Register IPC events for the main window.
   registerWindowIPC(mainWindow)
 

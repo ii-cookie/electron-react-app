@@ -1,0 +1,28 @@
+.lang-change-button{
+    position: absolute;
+    top: 60%;
+    width: 70px;
+    right: 0;
+    background-color: var(--bg);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.lang-change-button ul{
+    display: inline;
+    list-style: none;
+    text-align: center;
+}
+
+.lang-change-button ul li{
+    margin: 7px 7px;
+    padding: auto;
+    height: 100px;
+    background-color: var(--bg-light);
+    color: var(--primary);
+    align-self: center;
+}
+
+.lang-change-button ul li.active{
+    color: var(--bg-light);
+    background-color: var(--primary);
+}
