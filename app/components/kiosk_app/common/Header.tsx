@@ -1,6 +1,6 @@
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCloudSun } from '@fortawesome/free-solid-svg-icons'
+import { faCloudSun, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import LSCD_logo from './images/lcsd-leisure-and-cultural-services-department-seeklogo.png'
 import HKPL_logo from './images/hkpl-hong-kong-public-library-logo.png'
 
@@ -36,6 +36,7 @@ const Header: React.FC = () => {
             <div className="weather">
               <FontAwesomeIcon icon={faCloudSun} /> {degree}
               <br />
+              <FontAwesomeIcon icon={faLocationDot} />
               {weather_location}
             </div>
           </ul>
