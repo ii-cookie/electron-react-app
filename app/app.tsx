@@ -2,11 +2,11 @@
 import Layout from './components/kiosk_app/common/Layout'
 import './styles/colors.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './components/kiosk_app/pages/Home'
-import DirectionEnquiry from './components/kiosk_app/pages/DirectionEnquiry'
-import HighlightedProgrammes from './components/kiosk_app/pages/HighlightedProgrammes'
-import GoodReads from './components/kiosk_app/pages/GoodReads'
-import ContentHighlights from './components/kiosk_app/pages/ContentHighlights'
+import Home from './components/kiosk_app/pages/home/Home'
+import DirectionEnquiry from './components/kiosk_app/pages/direction_enquiry/DirectionEnquiry'
+import HighlightedProgrammes from './components/kiosk_app/pages/highlighted_programmes/HighlightedProgrammes'
+import GoodReads from './components/kiosk_app/pages/good_reads/GoodReads'
+import ContentHighlights from './components/kiosk_app/pages/content_highlights/ContentHighlights'
 
 const router = createBrowserRouter([
   {
