@@ -7,3 +7,7 @@
     align-self: center;
     color: var(--primary);
 }
+
+.SimpleFooter span{
+    font-weight: 600;
+}

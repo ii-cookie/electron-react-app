@@ -1,4 +1,4 @@
-import { contextBridge } from 'electron'
+import { contextBridge, webFrame } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
 import api from './api'
 
@@ -9,6 +9,9 @@ if (process.contextIsolated) {
   try {
     contextBridge.exposeInMainWorld('electron', electronAPI)
     contextBridge.exposeInMainWorld('api', api)
+    contextBridge.exposeInMainWorld('electronAPI', {
+      setZoomFactor: (zoomFactor: number) => webFrame.setZoomFactor(zoomFactor),
+    });
   } catch (error) {
     console.error(error)
   }

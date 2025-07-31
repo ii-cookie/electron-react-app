@@ -24,7 +24,7 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createAppWindow()
     }
-  })
+  }) 
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common
