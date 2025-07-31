@@ -1,6 +1,18 @@
 @import '../../../styles/colors.css';
 
 .Layout{
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg-dark);
-    height: 100vh;
+    min-height: 100vh;
+
+}
+
+.Layout .Page-content{
+    position: fixed;
+    top: 180px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: calc(100vh - 180px - 60px);
+    overflow-y: auto;
 }

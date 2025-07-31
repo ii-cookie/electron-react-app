@@ -11,7 +11,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="Layout">
       <Header />
-      <main>{children}</main>
+      <main className="Page-content">{children}</main>
       <Lang_Change />
       <SimpleFooter FooterContent={content}></SimpleFooter>
     </div>
