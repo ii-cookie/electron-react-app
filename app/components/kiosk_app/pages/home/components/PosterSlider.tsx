@@ -88,9 +88,9 @@ const PosterSlider = () => {
             <div className="image-container">
               <img src={item.image} alt={item.title} className="object-cover m-auto" />
             </div>
-            <div className="p-5 bg-amber-300">
+            {/* <div className="p-5 bg-amber-300">
               <p className="font-semibold">{item.title}</p>
-            </div>
+            </div> */}
           </div>
         ))}
       </Slider>

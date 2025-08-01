@@ -14,9 +14,9 @@ interface feature {
 const FeatureList = () => {
   const feature_array: feature[] = [
     { icon: <FontAwesomeIcon icon={faRoute} />, content: 'Direction Enquiry', path: '/DirectionEnquiry' },
+    { icon: <FontAwesomeIcon icon={faBook} />, content: 'Highlighted Programmes', path: 'HighlightedProgrammes' },
     { icon: <FontAwesomeIcon icon={faThumbsUp} />, content: 'Good Reads', path: '/GoodReads' },
     { icon: <FontAwesomeIcon icon={faStar} />, content: 'Content Highlights', path: '/ContentHighlights' },
-    { icon: <FontAwesomeIcon icon={faBook} />, content: 'Highlighted Programmes', path: 'HighlightedProgrammes' },
   ]
 
   return (
