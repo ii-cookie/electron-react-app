@@ -1,0 +1,8 @@
+.PosterSlider{
+    position: relative;
+    top: 15%;
+    width: 75%;
+    margin: auto;
+    border-width: 2px;
+    padding: 10px 10px;
+}
