@@ -41,6 +41,7 @@ function SampleNextArrow(props) {
         justifyContent: 'center',
         width: '150px',
         height: '150px',
+        transform: 'translateX(150px)',
       }}
       onClick={onClick}
     >
@@ -61,7 +62,7 @@ function SamplePrevArrow(props) {
         justifyContent: 'center',
         width: '150px',
         height: '150px',
-        alignSelf: 'center',
+        transform: 'translateX(-150px)',
       }}
       onClick={onClick}
     >
