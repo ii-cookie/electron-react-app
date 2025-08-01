@@ -3,7 +3,8 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-//NOTE THAT IMAGE MUST BE >= 810x1550 TO FILL WHOLE POSTER
+//NOTE THAT IMAGE MUST BE >= 810x1550 TO FILL WHOLE POSTER AREA
+//recommend imported image is exactly 810x1550, as extended part will be cut out
 
 import image1 from './1.jpg'
 import image2 from './2.jpg'
