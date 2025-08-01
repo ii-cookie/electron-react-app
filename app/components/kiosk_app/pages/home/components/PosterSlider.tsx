@@ -77,6 +77,8 @@ const PosterSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   }
@@ -86,7 +88,7 @@ const PosterSlider = () => {
         {data.map((item, index) => (
           <div key={index}>
             <div className="image-container">
-              <img src={item.image} alt={item.title} className="object-cover m-auto" />
+              <img src={item.image} alt={item.title} className="object-cover w-full h-full m-auto" />
             </div>
             {/* <div className="p-5 bg-amber-300">
               <p className="font-semibold">{item.title}</p>
