@@ -3,28 +3,32 @@ import './FeatureList.css'
 import { Button } from '@/app/components/ui/button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 
 interface feature {
   icon: ReactElement
   content: string
+  path: string
 }
 
 const FeatureList = () => {
   const feature_array: feature[] = [
-    { icon: <FontAwesomeIcon icon={faRoute} />, content: 'Direction Enquiry' },
-    { icon: <FontAwesomeIcon icon={faThumbsUp} />, content: 'Good Reads' },
-    { icon: <FontAwesomeIcon icon={faStar} />, content: 'Content Highlights' },
-    { icon: <FontAwesomeIcon icon={faBook} />, content: 'Highlighted Programme' },
+    { icon: <FontAwesomeIcon icon={faRoute} />, content: 'Direction Enquiry', path: '/DirectionEnquiry' },
+    { icon: <FontAwesomeIcon icon={faThumbsUp} />, content: 'Good Reads', path: '/GoodReads' },
+    { icon: <FontAwesomeIcon icon={faStar} />, content: 'Content Highlights', path: '/ContentHighlights' },
+    { icon: <FontAwesomeIcon icon={faBook} />, content: 'Highlighted Programmes', path: 'HighlightedProgrammes' },
   ]
 
   return (
     <div className="FeatureList">
       <div className="grid grid-cols-4 gap-4">
         {feature_array.map((item, index) => (
-          <Button variant="default" key={index}>
-            <div className="icon">{item.icon}</div>
-            <span>{item.content}</span>
-          </Button>
+          <Link to={item.path}>
+            <Button variant="default" key={index}>
+              <div className="icon">{item.icon}</div>
+              <span>{item.content}</span>
+            </Button>
+          </Link>
         ))}
       </div>
     </div>
