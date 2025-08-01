@@ -2,7 +2,7 @@ import HomeButton from '../../components/HomeButton'
 
 const ContentHighlights = () => {
   return (
-    <div>
+    <div className="text-9xl">
       ContentHighlights
       <HomeButton />
     </div>

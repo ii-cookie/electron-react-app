@@ -2,7 +2,7 @@ import HomeButton from '../../components/HomeButton'
 
 const DirectionEnquiry = () => {
   return (
-    <div>
+    <div className="text-9xl">
       DirectionEnquiry <HomeButton />
     </div>
   )
