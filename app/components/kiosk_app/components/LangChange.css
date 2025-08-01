@@ -5,6 +5,7 @@
     right: 0;
     background-color: var(--bg);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .lang-change-button ul{
@@ -19,6 +20,7 @@
     height: 100px;
     background-color: var(--bg-light);
     color: var(--primary);
+    border-radius: 10px;
     align-self: center;
 }
 
