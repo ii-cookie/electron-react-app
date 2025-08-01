@@ -1,5 +1,11 @@
+import HomeButton from '../../components/HomeButton'
+
 const DirectionEnquiry = () => {
-  return <div>DirectionEnquiry</div>
+  return (
+    <div>
+      DirectionEnquiry <HomeButton />
+    </div>
+  )
 }
 
 export default DirectionEnquiry
