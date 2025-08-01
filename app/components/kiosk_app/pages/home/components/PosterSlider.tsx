@@ -41,7 +41,7 @@ const PosterSlider = () => {
         {data.map((item, index) => (
           <div key={index}>
             <div>
-              <img src={item.image} alt={item.title} className="w-60 h-60 object-cover" />
+              <img src={item.image} alt={item.title} className="w-60 h-60 object-cover m-auto" />
             </div>
             <div className="p-5 bg-amber-300">
               <p className="font-semibold">{item.title}</p>
