@@ -1,0 +1,27 @@
+.FeatureList{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.FeatureList Button{
+    width: 100%;
+    height: 240px;
+}
+
+.FeatureList .icon{
+    font-size: 80px;
+    top: 8%;
+    position: absolute;
+    align-self: center;
+    color: var(--primary);
+}
+
+.FeatureList Button span{
+    width: 20%;
+    font-size: 25px;
+    overflow-wrap:anywhere;
+    position: absolute;
+    bottom: 15%;
+}

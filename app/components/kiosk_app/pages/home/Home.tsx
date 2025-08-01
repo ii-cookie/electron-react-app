@@ -1,5 +1,12 @@
+import './Home.css'
+import FeatureList from './components/FeatureList'
+
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <>
+      <FeatureList />
+    </>
+  )
 }
 
 export default Home
