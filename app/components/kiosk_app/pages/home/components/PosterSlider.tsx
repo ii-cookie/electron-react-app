@@ -39,12 +39,11 @@ function SampleNextArrow(props) {
       className={className}
       style={{
         ...style,
-        display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         width: '150px',
         height: '150px',
-        transform: 'translateX(150px)',
+        transform: 'translateX(var(--BFS-button-X)) translateY(var(--BFS-button-Y))',
       }}
       onClick={onClick}
     >
@@ -60,12 +59,11 @@ function SamplePrevArrow(props) {
       className={className}
       style={{
         ...style,
-        display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         width: '150px',
         height: '150px',
-        transform: 'translateX(-150px)',
+        transform: 'translateX(var(--BFS-button-X)) translateY(var(--BFS-button-Y))',
       }}
       onClick={onClick}
     >

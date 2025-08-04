@@ -35,4 +35,27 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+
+  --BFS-button-Y: 0px;
+}
+
+.slick-prev{
+    --BFS-button-X: -150px;
+}
+
+.slick-next{
+    --BFS-button-X: 150px;
+}
+
+.BFA .slick-prev,
+.BFA .slick-next{
+    --BFS-button-Y: 800px;
+}
+
+.BFA .slick-prev{
+    --BFS-button-X: 300px;
+}
+
+.BFA .slick-next{
+    --BFS-button-X: -300px;
 }
