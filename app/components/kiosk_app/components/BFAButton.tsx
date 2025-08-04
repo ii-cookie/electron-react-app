@@ -1,4 +1,4 @@
-import { faWheelchairAlt } from '@fortawesome/free-solid-svg-icons'
+import { faWheelchair } from '@fortawesome/free-solid-svg-icons'
 
 import CircleButton from './CircleButton'
 
@@ -9,7 +9,7 @@ const BFAButtonClick = () => {
 const BFAButton = () => {
   return (
     <div className="BFAButton absolute top-[1500px] right-0 p-[5px]" onClick={BFAButtonClick}>
-      <CircleButton icon={faWheelchairAlt} name="BFA" url=""></CircleButton>
+      <CircleButton icon={faWheelchair} name="BFA" url=""></CircleButton>
     </div>
   )
 }
