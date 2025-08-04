@@ -41,9 +41,9 @@ function SampleNextArrow(props) {
         ...style,
         alignItems: 'center',
         justifyContent: 'center',
-        width: '150px',
-        height: '150px',
-        transform: 'translateX(var(--BFS-button-X)) translateY(var(--BFS-button-Y))',
+        width: 'var(--Button-Size)',
+        height: 'var(--Button-Size)',
+        transform: 'translateX(var(--X-Offset)) translateY(var(--Y-Offset))',
       }}
       onClick={onClick}
     >
@@ -61,9 +61,9 @@ function SamplePrevArrow(props) {
         ...style,
         alignItems: 'center',
         justifyContent: 'center',
-        width: '150px',
-        height: '150px',
-        transform: 'translateX(var(--BFS-button-X)) translateY(var(--BFS-button-Y))',
+        width: 'var(--Button-Size)',
+        height: 'var(--Button-Size)',
+        transform: 'translateX(var(--X-Offset)) translateY(var(--Y-Offset))',
       }}
       onClick={onClick}
     >
