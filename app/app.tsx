@@ -1,5 +1,5 @@
 // import WelcomeKit from '@/app/components/welcome/WelcomeKit'
-import Layout from './components/kiosk_app/components/Layout'
+import Layout from './components/kiosk_app/components/Layout/Layout'
 import './styles/colors.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/kiosk_app/pages/home/Home'
