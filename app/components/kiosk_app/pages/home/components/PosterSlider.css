@@ -13,13 +13,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px;
+    border-width: 5px;
     max-width: 100%;
-    filter: saturate(50%);
+    /* filter: saturate(50%);
     transition: all ease 0.5s;
     &:hover{
         filter: saturate(100%);
-    }
+    } */
 }
 
 .slick-prev::before,
