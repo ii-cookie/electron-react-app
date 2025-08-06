@@ -1,0 +1,19 @@
+.popup-content{
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+
+.ProgrammePopUp{
+    font-size: 10em;
+    color: black;
+}
+
+.ProgrammePopUp span{
+    color: green;
+    font-size: 250px;
+}
