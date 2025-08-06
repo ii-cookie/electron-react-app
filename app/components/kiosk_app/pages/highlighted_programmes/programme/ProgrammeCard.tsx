@@ -41,9 +41,7 @@ const ProgrammeCard = ({ title, date, location, image, qrcode }: Programme) => {
       nested
     >
       <ProgrammePopUp image={image} title={title} qrcode={qrcode} details="really cool cat" />
-      <div>
-        <button onClick={() => close()}>Close modal</button>
-      </div>
+      <div className="close-popup-hint">Tap to close</div>
     </Popup>
   )
 }
