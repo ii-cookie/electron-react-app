@@ -11,7 +11,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="Layout">
       <Header />
-      <main className="Page-content">{children}</main>
+      <main className="Page-content no-scrollbar">{children}</main>
       <Lang_Change />
       <SimpleFooter FooterContent={content}></SimpleFooter>
     </div>
