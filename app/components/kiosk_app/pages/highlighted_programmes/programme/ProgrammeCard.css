@@ -28,13 +28,19 @@
   .programme-content {
     flex-basis: 60%;
     padding: 16px;
+    white-space: nowrap;
     
+    max-width:630px;  
+    /* i have no clue why max width 0% worked but it worked */
   }
   
   .programme-title {
     margin: 0 0 8px;
     font-size: 7em;
     color: var(--primary);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   
   .programme-date {

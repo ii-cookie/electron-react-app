@@ -21,7 +21,7 @@ interface Programme {
 const HighlightedProgrammes = () => {
   const programme_list: Programme[] = [
     {
-      title: 'some silly cat',
+      title: 'some silly cat are doing some silly things',
       date: '07-12-2025',
       time: '09:00 - 18:00',
       location: 'Hong Kong Central Library',
