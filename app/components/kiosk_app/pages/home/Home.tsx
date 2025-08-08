@@ -1,4 +1,4 @@
-import BFAButton from '../../components/BFAButton'
+import BFAButton from '../../components/Layout/BFAButton'
 import './Home.css'
 import FeatureList from './components/FeatureList'
 import PosterSlider from './components/PosterSlider'

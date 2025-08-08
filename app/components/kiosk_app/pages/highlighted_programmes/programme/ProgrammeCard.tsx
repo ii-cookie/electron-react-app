@@ -75,7 +75,9 @@ const ProgrammeCard = ({ title, date, time, location, organizer, remarks, enquir
     >
       <ProgrammePopUp image={image} title={title} qrcode={qrcode} details={tempDetails} />
       <div className="close-popup-hint">
-        <FontAwesomeIcon icon={faHand} /> Tap to close <p>(closes in 10 seconds)</p>
+        <FontAwesomeIcon icon={faHand} /> Tap to close
+        {/* <p>(closes in 10 seconds) </p> */}
+        {/* not in requirement so prob not doing */}
       </div>
     </Popup>
   )

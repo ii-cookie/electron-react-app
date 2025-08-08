@@ -1,5 +1,5 @@
-import BFAButton from '../../components/BFAButton'
-import HomeButton from '../../components/HomeButton'
+import BFAButton from '../../components/Layout/BFAButton'
+import HomeButton from '../../components/Layout/HomeButton'
 
 const GoodReads = () => {
   return (
