@@ -3,11 +3,12 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    background-color: transparent;
+    height: 110px;
+    background-color: var(--bg-dark);
     align-self: center;
     color: var(--primary);
     z-index: 1000;
+    padding-top: 50px;
 }
 
 .SimpleFooter span{
