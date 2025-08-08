@@ -4,7 +4,7 @@ import CircleButton from './CircleButton'
 
 const HomeButton = () => {
   return (
-    <div className="HomeButton absolute bottom-20/100 right-0 p-[5px]">
+    <div className="HomeButton fixed bottom-20/100 right-0 p-[5px]">
       <CircleButton icon={faHouse} name="Home" url="/"></CircleButton>
     </div>
   )

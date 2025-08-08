@@ -8,7 +8,7 @@ const BFAButtonClick = () => {
 
 const BFAButton = () => {
   return (
-    <div className="BFAButton absolute bottom-25/100 right-0 p-[5px]" onClick={BFAButtonClick}>
+    <div className="BFAButton fixed bottom-25/100 right-0 p-[5px]" onClick={BFAButtonClick}>
       <CircleButton icon={faWheelchair} name="BFA" url=""></CircleButton>
     </div>
   )
