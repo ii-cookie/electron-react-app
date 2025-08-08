@@ -1,7 +1,7 @@
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 
-import { faCalendar, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faHand, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import './ProgrammeCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ProgrammePopUp from './ProgrammePopUp'
@@ -9,12 +9,45 @@ import ProgrammePopUp from './ProgrammePopUp'
 interface Programme {
   title: string
   date: string
+  time: string
   location: string
+  organizer?: string
+  remarks?: string
+  enquiry?: string
   image: string
   qrcode: string
 }
 
-const ProgrammeCard = ({ title, date, location, image, qrcode }: Programme) => {
+const ProgrammeCard = ({ title, date, time, location, organizer, remarks, enquiry, image, qrcode }: Programme) => {
+  const tempDetails = (
+    <div className="details">
+      Date: {date} <br />
+      Time: {time} <br />
+      Location: {location} <br />
+      {organizer ? (
+        <>
+          Organizer: {organizer} <br />
+        </>
+      ) : (
+        <></>
+      )}
+      {remarks ? (
+        <>
+          Remarks: {remarks} <br />
+        </>
+      ) : (
+        <></>
+      )}
+      {enquiry ? (
+        <>
+          Enquiry: {enquiry} <br />
+        </>
+      ) : (
+        <></>
+      )}
+    </div>
+  )
+
   return (
     <Popup
       trigger={
@@ -40,8 +73,10 @@ const ProgrammeCard = ({ title, date, location, image, qrcode }: Programme) => {
       modal
       nested
     >
-      <ProgrammePopUp image={image} title={title} qrcode={qrcode} details="really cool cat" />
-      <div className="close-popup-hint">Tap to close</div>
+      <ProgrammePopUp image={image} title={title} qrcode={qrcode} details={tempDetails} />
+      <div className="close-popup-hint">
+        <FontAwesomeIcon icon={faHand} /> Tap to close <p>(closes in 10 seconds)</p>
+      </div>
     </Popup>
   )
 }

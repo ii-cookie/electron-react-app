@@ -1,6 +1,6 @@
 .lang-change-button{
     position: absolute;
-    top: 50%;
+    bottom: 30%;
     width: 100px;
     right: 0;
     background-color: var(--bg);

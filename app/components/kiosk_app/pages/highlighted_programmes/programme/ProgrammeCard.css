@@ -53,11 +53,16 @@
     font-size: 3em;
   }
 
-  .close-popup-hint{
-    padding: auto;
+  .close-popup-hint {
     position: fixed;
     bottom: 5%;
-    font-size: 150px;
-    color: rgba(255,255,255,0.5);
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
+    p{
+      font-size: 50px;
+    }
   }

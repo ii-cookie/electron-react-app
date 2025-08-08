@@ -11,9 +11,13 @@ const HighlightedProgrammes = () => {
     <div className="HighlightedProgrammes ">
       <div className="programmes-container">
         <ProgrammeCard
-          title="cat"
+          title="some silly cat"
           date="07-12-2025"
-          location="somewhere in the internet"
+          time="09:00 - 18:00"
+          location="Hong Kong Central Library"
+          organizer="sillycatowner.org"
+          remarks="really silly cat"
+          enquiry="1234 5678"
           image={img1}
           qrcode={qrcode}
         />
