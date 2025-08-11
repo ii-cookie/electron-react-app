@@ -1,0 +1,54 @@
+.BookPopUp {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    font-family: 'Inter', sans-serif;
+
+
+    .title{
+        font-size: 100px;
+        color: green;
+    }
+
+    .qrcode{
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .qrcode-description{
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    .details{
+        font-size: 50px;
+        line-height: 90px;
+    }
+  }
+  
+  /* Optional: Add custom scrollbar styling */
+  .ProgrammePopUp::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .ProgrammePopUp::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .ProgrammePopUp::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .ProgrammePopUp::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.popup-content{
+    width: 80%;
+    height: 70%;
+    border-radius: 1em;
+}
