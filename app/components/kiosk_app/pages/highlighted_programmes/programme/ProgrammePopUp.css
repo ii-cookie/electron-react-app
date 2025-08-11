@@ -3,7 +3,7 @@
     height: 100%;
     overflow-y: auto;
     font-family: 'Inter', sans-serif;
-
+    
 
     .title{
         font-size: 100px;
@@ -51,4 +51,12 @@
     width: 80%;
     height: 70%;
     border-radius: 1em;
+    z-index: 50;
+    padding: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.popup-content::-webkit-scrollbar{
+  visibility: hidden;
 }
