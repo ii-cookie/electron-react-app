@@ -28,29 +28,12 @@
     }
   }
   
-  /* Optional: Add custom scrollbar styling */
-  .ProgrammePopUp::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  .ProgrammePopUp::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-  }
-  
-  .ProgrammePopUp::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-  }
-  
-  .ProgrammePopUp::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
 
 .popup-content{
     width: 80%;
     height: 70%;
     border-radius: 1em;
+    overflow: hidden;
     z-index: 50;
     padding: 0;
     -ms-overflow-style: none;  /* IE and Edge */
