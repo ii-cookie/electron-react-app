@@ -28,6 +28,105 @@ const GoodReads = () => {
         'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
       qrcode: qrcode,
     },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
+    {
+      image: img1,
+      title: '1984',
+      author: 'George Orwell',
+      publisher: 'Penguin Books Ltd',
+      ISBN: '9780141036144',
+      PublicationDate: '07/2008',
+      description:
+        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
+      qrcode: qrcode,
+    },
   ]
 
   return (
@@ -48,16 +147,6 @@ const GoodReads = () => {
             ></BookCard>
           </div>
         ))}
-        <BookCard
-          image={img1}
-          title="1984"
-          author="George Orwell"
-          publisher="Penguin Books Ltd"
-          ISBN="9780141036144"
-          PublicationDate="07/2008"
-          description="Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities."
-          qrcode={qrcode}
-        />
       </div>
       <HomeButton /> <BFAButton />
     </div>

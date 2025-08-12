@@ -7,6 +7,7 @@ import { faHand } from '@fortawesome/free-solid-svg-icons'
 const BookCard = ({ image, title, author, publisher, ISBN, PublicationDate, description, qrcode }) => {
   const tempDetails = (
     <div className="details">
+      <br />
       Author: {author} <br />
       Publisher: {publisher} <br />
       ISBN: {ISBN} <br />
