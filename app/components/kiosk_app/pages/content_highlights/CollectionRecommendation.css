@@ -1,0 +1,36 @@
+.collection-recommendation-book {
+    padding-left: 2%;
+    padding-right: 2%;
+    border-width: 10px;
+    position: relative; /* Positioning context for absolute children */
+    min-height: 500px; /* Ensure enough height for overlapping elements */
+    display: block; /* Remove flex to allow natural stacking */
+  }
+  
+  .collection-recommendation-book .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    width: 1400px; /* Fixed width matching MyTabbedSlider */
+    height: 400px;
+    background-color: #f0f0f0; /* Hardcoded background, replace var(--bg) */
+    border-radius: 2em 0 2em 2em;
+    z-index: 1; /* Behind BookCard */
+  }
+  
+  /* Ensure BookCard is on top */
+  .collection-recommendation-book .book-card {
+    position: relative;
+    z-index: 2; /* Higher than container */
+  }
+  
+  /* Offset the slider content to the right */
+  .collection-recommendation-book .container .slick-slider {
+    margin-left: 0px; 
+    color: var(--text-muted);
+    
+  }
+  .collection-recommendation-book .container .slick-slider .slick-list{
+    height: 400px;
+  }

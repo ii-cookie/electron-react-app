@@ -3,11 +3,12 @@
     flex-direction: column;
     width: 300px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     overflow: hidden;
     background-color: #f9f9f9;
     margin: 50px 80px;
     border-radius: 1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 
   .book-cover-container{
