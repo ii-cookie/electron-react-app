@@ -4,8 +4,23 @@ import BookPopUp from './BookPopup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHand } from '@fortawesome/free-solid-svg-icons'
 
-const BookCard = ({ image, title, author, qrcode }) => {
-  const tempDetails = <div className="details">Author: {author}</div>
+const BookCard = ({ image, title, author, publisher, ISBN, PublicationDate, description, qrcode }) => {
+  const tempDetails = (
+    <div className="details">
+      Author: {author} <br />
+      Publisher: {publisher} <br />
+      ISBN: {ISBN} <br />
+      Publication date: {PublicationDate} <br />
+      <br />
+      {description ? (
+        <>
+          Description: {description} <br />
+        </>
+      ) : (
+        <></>
+      )}
+    </div>
+  )
   return (
     <Popup
       trigger={

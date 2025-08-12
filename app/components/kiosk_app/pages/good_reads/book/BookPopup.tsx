@@ -21,7 +21,7 @@ const BookPopUp = ({ image, title, qrcode, details }: Prop) => {
           <p className="qrcode-description">Scan to borrow</p>
         </div>
       </div>
-      <p className="details">{details}</p>
+      <p className="details no-scrollbar">{details}</p>
     </div>
   )
 }
