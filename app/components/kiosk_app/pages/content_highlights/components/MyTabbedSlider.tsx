@@ -55,7 +55,7 @@ const MyTabbedSlider: React.FC = () => {
               borderRadius: '1em 1em 0 0',
               padding: '10px',
               cursor: 'pointer',
-              backgroundColor: activeSlide === index ? 'green' : 'white',
+              backgroundColor: activeSlide === index ? 'green' : 'var(--bg)',
               color: activeSlide === index ? 'white' : 'green',
               fontWeight: activeSlide === index ? '700' : '700',
               //   backgroundColor: activeSlide === index ? '#f0f0f0' : 'transparent', // Optional: light background for active
