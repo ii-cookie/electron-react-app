@@ -29,17 +29,3 @@
   }
   
 
-.popup-content{
-    width: 80%;
-    height: 70%;
-    border-radius: 1em;
-    overflow: hidden;
-    z-index: 50;
-    padding: 0;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-.popup-content::-webkit-scrollbar{
-  visibility: hidden;
-}

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHand } from '@fortawesome/free-solid-svg-icons'
 
 const BookCard = ({ image, title, author, qrcode }) => {
-  const tempDetails = <div className="details">author: {author}</div>
+  const tempDetails = <div className="details">Author: {author}</div>
   return (
     <Popup
       trigger={
