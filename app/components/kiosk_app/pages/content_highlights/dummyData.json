@@ -1,0 +1,84 @@
+{
+    "2025": {
+      "January": {
+        "name": "Science Fiction Favorites",
+        "image": "./images/theme1.jpg",
+        "bookList": [
+          {
+            "title": "Dune",
+            "author": "Frank Herbert",
+            "publisher": "Ace Books",
+            "ISBN": "9780441013593",
+            "PublicationDate": "1965-08-01",
+            "description": "A science fiction epic set on the desert planet Arrakis, where noble houses fight for control of the valuable spice melange.",
+            "image": "./images/1.jpg",
+            "qrcode": "./images/sample_QR_code.png"
+          },
+          {
+            "title": "Neuromancer",
+            "author": "William Gibson",
+            "publisher": "Ace Books",
+            "ISBN": "9780441569595",
+            "PublicationDate": "1984-07-01",
+            "description": "A cyberpunk novel following a washed-up hacker hired for a mysterious job in a dystopian future.",
+            "image": "./images/2.jpg",
+            "qrcode": "./images/sample_QR_code.png"
+          }
+        ]
+      },
+      "February": {
+        "name": "Classic Literature",
+        "image": "./images/theme2.jpg",
+        "bookList": [
+          {
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "publisher": "Penguin Classics",
+            "ISBN": "9780141439518",
+            "PublicationDate": "1813-01-28",
+            "description": "A romantic novel exploring love, class, and social expectations in 19th-century England.",
+            "image": "./images/3.jpg",
+            "qrcode": "./images/sample_QR_code.png"
+          },
+          {
+            "title": "1984",
+            "author": "George Orwell",
+            "publisher": "Signet Classics",
+            "ISBN": "9780451524935",
+            "PublicationDate": "1949-06-08",
+            "description": "A dystopian novel about totalitarianism, surveillance, and the loss of personal freedom.",
+            "image": "./images/4.jpg",
+            "qrcode": "./images/sample_QR_code.png"
+          }
+        ]
+      }
+    },
+    "2024": {
+      "December": {
+        "name": "Mystery Thrillers",
+        "image": "./images/theme3.jpg",
+        "bookList": [
+          {
+            "title": "The Girl with the Dragon Tattoo",
+            "author": "Stieg Larsson",
+            "publisher": "Vintage Crime",
+            "ISBN": "9780307454546",
+            "PublicationDate": "2008-09-16",
+            "description": "A gripping mystery involving a hacker and a journalist investigating a decades-old disappearance.",
+            "image": "./images/5.jpg",
+            "qrcode": "./images/sample_QR_code.png"
+          },
+          {
+            "title": "Gone Girl",
+            "author": "Gillian Flynn",
+            "publisher": "Crown Publishing",
+            "ISBN": "9780307588371",
+            "PublicationDate": "2012-06-05",
+            "description": "A psychological thriller about a missing woman and the secrets in her marriage.",
+            "image": "./images/6.jpg",
+            "qrcode": "./images/sample_QR_code.png"
+          }
+        ]
+      }
+    }
+  }
