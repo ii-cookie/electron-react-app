@@ -27,14 +27,9 @@
   }
   
   .book-details {
-    max-width: 300px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
   }
   
   .book-title {
