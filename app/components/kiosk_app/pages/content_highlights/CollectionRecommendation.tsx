@@ -3,12 +3,30 @@ import BookCard from '../good_reads/book/BookCard'
 import MyTabbedSlider from './components/MyTabbedSlider'
 import dummyData from './dummyData.json'
 import img1 from './images/1.jpg'
-import qrcode from './images/sample_QR_code.png'
+import img2 from './images/2.jpg'
+import img3 from './images/3.jpg'
+import img4 from './images/4.jpg'
+import img5 from './images/5.jpg'
+import img6 from './images/6.jpg'
+import QR_code from './images/sample_QR_code.png'
+import { ReactElement } from 'react'
+
+const imageMap: { [key: string]: string } = {
+  img1: img1,
+  img2: img2,
+  img3: img3,
+  img4: img4,
+  img5: img5,
+  img6: img6,
+  QR_code: QR_code,
+}
 
 interface Prop {
   year: string
   month: string
 }
+
+//reference for the data structure in dummy data
 
 interface Book {
   title: string
@@ -16,9 +34,12 @@ interface Book {
   publisher: string
   ISBN: string
   PublicationDate: string
-  description?: string
+  description: string
   image: string
   qrcode: string
+  author_description: string
+  source?: string
+  tempDetails: ReactElement
 }
 
 interface Theme {
@@ -40,19 +61,27 @@ const CollectionRecommendation = ({ year, month }: Prop) => {
   const ThemeBanner = dummyData[year][month].image
   const RecommendedBooks = dummyData[year][month].bookList
 
-  const BookList: Book[] = [
-    {
-      image: img1,
-      title: '1984',
-      author: 'George Orwell',
-      publisher: 'Penguin Books Ltd',
-      ISBN: '9780141036144',
-      PublicationDate: '07/2008',
-      description:
-        'Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities.',
-      qrcode: qrcode,
-    },
-  ]
+  const BookList: Book[] = RecommendedBooks.map((book: Book) => ({
+    ...book,
+    image: imageMap[book.image],
+    qrcode: imageMap[book.qrcode],
+    tempDetails: (
+      <div className="details">
+        Author: {book.author} <br />
+        Publisher: {book.publisher} <br />
+        ISBN: {book.ISBN} <br />
+        Publication date: {book.PublicationDate} <br />
+        <br />
+        {book.source ? (
+          <>
+            Source: {book.source} <br />
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
+    ),
+  }))
   return (
     <div className="CollectionRecommendation">
       <span>
@@ -72,7 +101,11 @@ const CollectionRecommendation = ({ year, month }: Prop) => {
             qrcode={item.qrcode}
           ></BookCard>
           <div className="container">
-            <MyTabbedSlider />
+            <MyTabbedSlider
+              description={item.description}
+              details={item.tempDetails}
+              author_description={item.author_description}
+            />
           </div>
         </div>
       ))}

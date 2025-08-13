@@ -4,7 +4,7 @@
     /* border-width: 10px; */
     position: relative; /* Positioning context for absolute children */
     min-height: 500px; /* Ensure enough height for overlapping elements */
-    display: block; /* Remove flex to allow natural stacking */
+    display: block; 
   }
   
   .collection-recommendation-book .container {
@@ -12,9 +12,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    width: 1400px; /* Fixed width matching MyTabbedSlider */
+    width: 1400px; /* Fixed width */
     height: 400px;
-    background-color: #f0f0f0; /* Hardcoded background, replace var(--bg) */
+    background-color: #f0f0f0; 
     border-radius: 2em 0 2em 2em;
     z-index: 1; /* Behind BookCard */
   }
@@ -32,5 +32,9 @@
     
   }
   .collection-recommendation-book .container .slick-slider .slick-list{
+    margin: 20px;
     height: 400px;
+    span{
+      font-size: 30px;
+    }
   }
