@@ -14,6 +14,21 @@ import img6 from './images/6.jpg'
 import QR_code from './images/sample_QR_code.png'
 import { ReactElement } from 'react'
 
+// make dynamic importing when have time
+
+async function import_images_in_loop(path_list: string[]) {
+  global.imageMap_global = {}
+  for (const path of path_list) {
+    try {
+      const image = await import(path)
+
+      global.imageMap_global[path] = image
+    } catch (error) {
+      console.error(`Error loading module from ${path}:`, error)
+    }
+  }
+}
+
 const imageMap: { [key: string]: string } = {
   theme1: theme1,
   theme2: theme2,
