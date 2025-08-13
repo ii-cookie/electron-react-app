@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
 import './BookPopup.css'
+import bg from './Screenshot 2025-08-11 161739.png'
 
 interface Prop {
   image: string
@@ -10,7 +11,8 @@ interface Prop {
 
 const BookPopUp = ({ image, title, qrcode, details }: Prop) => {
   return (
-    <div className="BookPopUp bg-white">
+    <div className="BookPopUp ">
+      <img src={bg} alt="" className="absolute object-cover w-full -z-5" />
       <div className="main-container">
         <div className="book-cover-container">
           <img src={image} alt={title} className="book-cover" />
