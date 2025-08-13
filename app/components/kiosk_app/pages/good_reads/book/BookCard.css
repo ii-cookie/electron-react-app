@@ -9,6 +9,7 @@
     margin: 50px 80px;
     border-radius: 1em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    
   }
 
   .book-cover-container{
@@ -26,15 +27,23 @@
   }
   
   .book-details {
+    max-width: 300px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
     text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   
   .book-title {
+    margin: 0 0 8px;
     font-size: 3em;
     color: var(--primary);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .book-author{

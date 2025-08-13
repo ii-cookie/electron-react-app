@@ -31,7 +31,7 @@ const BookCard = ({ image, title, author, publisher, ISBN, PublicationDate, desc
           </div>
 
           <div className="book-details">
-            <h3 className="book-title">{title}</h3>
+            <h2 className="book-title">{title}</h2>
             <p className="book-author">{author}</p>
             <button className="fake-button">E-Reading/Borrowing</button>
           </div>
