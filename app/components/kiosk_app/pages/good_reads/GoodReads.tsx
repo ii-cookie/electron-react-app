@@ -1,3 +1,4 @@
+import './GoodReads.css'
 import BFAButton from '../../components/Layout/BFAButton'
 import HomeButton from '../../components/Layout/HomeButton'
 import BookCard from './book/BookCard'

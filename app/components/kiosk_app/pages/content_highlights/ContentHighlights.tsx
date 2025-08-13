@@ -1,3 +1,4 @@
+import './ContentHighlights.css'
 import BFAButton from '../../components/Layout/BFAButton'
 import HomeButton from '../../components/Layout/HomeButton'
 import CollectionRecommendation from './CollectionRecommendation'
