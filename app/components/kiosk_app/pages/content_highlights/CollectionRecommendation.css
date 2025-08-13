@@ -11,8 +11,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    width: 1400px; /* Fixed width */
+    transform: translate(-50%, -50%);
+    width: 1400px;
     height: 400px;
     background-color: #f0f0f0; 
     border-radius: 2em 0 2em 2em;
@@ -23,6 +23,7 @@
   .collection-recommendation-book .book-card {
     position: relative;
     z-index: 2; /* Higher than container */
+    margin-left: 100px; /* hard coded offset for book card */
   }
   
   /* Offset the slider content to the right */
