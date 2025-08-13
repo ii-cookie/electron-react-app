@@ -18,19 +18,19 @@ const Lang_Change: React.FC = () => {
           className={`lang-buttons ${activeLang === 'trad-cn' ? 'active' : ''}`}
           onClick={() => handleLanguageChange('trad-cn')}
         >
-          繁
+          <div>繁</div>
         </li>
         <li
           className={`lang-buttons ${activeLang === 'simp-cn' ? 'active' : ''}`}
           onClick={() => handleLanguageChange('simp-cn')}
         >
-          简
+          <div>简</div>
         </li>
         <li
           className={`lang-buttons ${activeLang === 'en' ? 'active' : ''}`}
           onClick={() => handleLanguageChange('en')}
         >
-          en
+          <div>EN</div>
         </li>
       </ul>
     </div>
