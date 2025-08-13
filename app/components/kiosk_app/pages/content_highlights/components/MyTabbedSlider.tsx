@@ -15,11 +15,12 @@ const MyTabbedSlider = ({ description, details, author_description }: Prop) => {
 
   const settings = {
     dots: false,
-    infinite: false, // Set to true if you want infinite looping
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
+    adaptiveHeight: false, // Disable adaptiveHeight to enforce fixed height
     afterChange: (current: number) => setActiveSlide(current),
   }
 
@@ -61,8 +62,6 @@ const MyTabbedSlider = ({ description, details, author_description }: Prop) => {
               backgroundColor: activeSlide === index ? 'green' : 'var(--bg)',
               color: activeSlide === index ? 'white' : 'green',
               fontWeight: activeSlide === index ? '600' : '550',
-
-              //   backgroundColor: activeSlide === index ? '#f0f0f0' : 'transparent', // Optional: light background for active
             }}
             onClick={() => handleLabelClick(index)}
           >
@@ -73,16 +72,41 @@ const MyTabbedSlider = ({ description, details, author_description }: Prop) => {
 
       {/* Slider */}
       <Slider ref={sliderRef} {...settings}>
-        <div style={{ background: '#ddd', margin: '20px', textAlign: 'center' }}>
-          {' '}
-          <span>{description}</span>{' '}
+        <div style={{ margin: '20px', textAlign: 'center' }}>
+          <div
+            style={{
+              background: 'transparent',
+              maxHeight: '330px', // Match .slick-list height
+              overflowY: 'auto', // Enable scrolling for this slide
+              padding: '10px', // Optional: Add padding for aesthetics
+            }}
+          >
+            <span>{description}</span>
+          </div>
         </div>
-        <div style={{ background: '#ccc', margin: '20px', textAlign: 'center' }}>
-          {' '}
-          <span>{details}</span>{' '}
+        <div style={{ margin: '20px', textAlign: 'center' }}>
+          <div
+            style={{
+              background: 'transparent',
+              maxHeight: '330px',
+              overflowY: 'auto',
+              padding: '10px',
+            }}
+          >
+            <span>{details}</span>
+          </div>
         </div>
-        <div style={{ background: '#bbb', margin: '20px', textAlign: 'center' }}>
-          <span>{author_description}</span>
+        <div style={{ margin: '20px', textAlign: 'center' }}>
+          <div
+            style={{
+              background: 'transparent',
+              maxHeight: '330px',
+              overflowY: 'auto',
+              padding: '10px',
+            }}
+          >
+            <span>{author_description}</span>
+          </div>
         </div>
       </Slider>
     </div>

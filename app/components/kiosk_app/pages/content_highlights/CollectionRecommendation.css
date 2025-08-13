@@ -1,64 +1,60 @@
-.CollectionRecommendation .Theme{
-  
+.CollectionRecommendation .Theme {
   width: 1200px;
   margin: auto;
-  
-  h1{
+
+  h1 {
     font-size: 70px;
     font-weight: 600;
     color: green;
   }
-  .banner-container{
+  .banner-container {
     height: 300px;
     border-radius: 1em;
     overflow: hidden;
   }
-  img{
+  img {
     width: 100%;
     object-fit: cover;
   }
 }
 
-
 .collection-recommendation-book {
-    padding-left: 2%;
-    padding-right: 2%;
-    /* border-width: 10px; */
-    position: relative; /* Positioning context for absolute children */
-    min-height: 500px; /* Ensure enough height for overlapping elements */
-    display: block; 
-  }
-  
-  .collection-recommendation-book .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1400px;
-    height: 400px;
-    background-color: #f0f0f0; 
-    border-radius: 2em 0 2em 2em;
-    z-index: 1; /* Behind BookCard */
-  }
-  
-  /* Ensure BookCard is on top */
-  .collection-recommendation-book .book-card {
-    position: relative;
-    z-index: 2; /* Higher than container */
-    margin-left: 100px; /* hard coded offset for book card */
-  }
-  
-  /* Offset the slider content to the right */
-  .collection-recommendation-book .container .slick-slider {
-    margin-left: 0px; 
-    color: var(--text-muted);
-    
-  }
-  .collection-recommendation-book .container .slick-slider .slick-list{
-    margin: 40px;
-    height: 330px;
-    overflow-y: auto;
-    span{
-      font-size: 30px;
-    }
-  }
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+  min-height: 500px;
+  display: block;
+}
+
+.collection-recommendation-book .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1400px;
+  height: 400px;
+  background-color: #f0f0f0;
+  border-radius: 2em 0 2em 2em;
+  z-index: 1;
+}
+
+.collection-recommendation-book .book-card {
+  position: relative;
+  z-index: 2;
+  margin-left: 100px;
+}
+
+.collection-recommendation-book .container .slick-slider {
+  margin-left: 0px;
+  color: var(--text-muted);
+}
+
+.collection-recommendation-book .container .slick-slider .slick-list {
+  margin: 40px;
+  height: 330px; /* Fixed height for the slider content area */
+  overflow-y: hidden; /* Disable overflow on .slick-list itself */
+}
+
+.collection-recommendation-book .container .slick-slider .slick-list span {
+  font-size: 30px;
+}
