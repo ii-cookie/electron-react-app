@@ -31,7 +31,6 @@
     white-space: nowrap;
     
     max-width:630px;  
-    /* i have no clue why max width 0% worked but it worked */
   }
   
   .programme-title {
