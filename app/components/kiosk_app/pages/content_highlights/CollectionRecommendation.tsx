@@ -14,7 +14,7 @@ import img6 from './images/6.jpg'
 import QR_code from './images/sample_QR_code.png'
 import { ReactElement } from 'react'
 
-// make dynamic importing when have time
+// #TODO make dynamic importing when have time
 
 async function import_images_in_loop(path_list: string[]) {
   global.imageMap_global = {}
