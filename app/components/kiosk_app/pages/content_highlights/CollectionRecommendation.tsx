@@ -2,6 +2,9 @@ import './CollectionRecommendation.css'
 import BookCard from '../good_reads/book/BookCard'
 import MyTabbedSlider from './components/MyTabbedSlider'
 import dummyData from './dummyData.json'
+import theme1 from './images/theme1.jpg'
+import theme2 from './images/theme2.jpg'
+import theme3 from './images/theme3.jpg'
 import img1 from './images/1.jpg'
 import img2 from './images/2.jpg'
 import img3 from './images/3.jpg'
@@ -12,6 +15,9 @@ import QR_code from './images/sample_QR_code.png'
 import { ReactElement } from 'react'
 
 const imageMap: { [key: string]: string } = {
+  theme1: theme1,
+  theme2: theme2,
+  theme3: theme3,
   img1: img1,
   img2: img2,
   img3: img3,
@@ -26,7 +32,7 @@ interface Prop {
   month: string
 }
 
-//reference for the data structure in dummy data
+// Data structure reference for the data structure in dummy data
 
 interface Book {
   title: string
@@ -58,7 +64,7 @@ interface ThemeYearList {
 
 const CollectionRecommendation = ({ year, month }: Prop) => {
   const ThemeName = dummyData[year][month].name
-  const ThemeBanner = dummyData[year][month].image
+  const ThemeBanner = imageMap[dummyData[year][month].image]
   const RecommendedBooks = dummyData[year][month].bookList
 
   const BookList: Book[] = RecommendedBooks.map((book: Book) => ({
@@ -87,6 +93,12 @@ const CollectionRecommendation = ({ year, month }: Prop) => {
       <span>
         year: {year} <br /> month: {month}
       </span>
+      <div className="Theme ">
+        <h1>{ThemeName}</h1>
+        <div className="banner-container">
+          <img src={ThemeBanner} alt="theme banner" />
+        </div>
+      </div>
       {BookList.map((item, index) => (
         <div className="collection-recommendation-book">
           <BookCard

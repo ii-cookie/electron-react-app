@@ -1,3 +1,25 @@
+.CollectionRecommendation .Theme{
+  
+  width: 1200px;
+  margin: auto;
+  
+  h1{
+    font-size: 90px;
+    font-weight: 600;
+    color: green;
+  }
+  .banner-container{
+    height: 300px;
+    border-radius: 1em;
+    overflow: hidden;
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
 .collection-recommendation-book {
     padding-left: 2%;
     padding-right: 2%;
