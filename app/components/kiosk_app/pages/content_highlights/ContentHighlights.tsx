@@ -5,7 +5,7 @@ import CollectionRecommendation from './CollectionRecommendation'
 const ContentHighlights = () => {
   return (
     <div className="ContentHighlights">
-      <CollectionRecommendation year="2025" month="January" />
+      <CollectionRecommendation year="2025" month="February" />
       <HomeButton />
       <BFAButton />
     </div>
