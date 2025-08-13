@@ -73,15 +73,15 @@ const MyTabbedSlider = ({ description, details, author_description }: Prop) => {
 
       {/* Slider */}
       <Slider ref={sliderRef} {...settings}>
-        <div style={{ background: '#ddd', padding: '20px', textAlign: 'center' }}>
+        <div style={{ background: '#ddd', margin: '20px', textAlign: 'center' }}>
           {' '}
           <span>{description}</span>{' '}
         </div>
-        <div style={{ background: '#ccc', padding: '20px', textAlign: 'center' }}>
+        <div style={{ background: '#ccc', margin: '20px', textAlign: 'center' }}>
           {' '}
           <span>{details}</span>{' '}
         </div>
-        <div style={{ background: '#bbb', padding: '20px', textAlign: 'center' }}>
+        <div style={{ background: '#bbb', margin: '20px', textAlign: 'center' }}>
           <span>{author_description}</span>
         </div>
       </Slider>
