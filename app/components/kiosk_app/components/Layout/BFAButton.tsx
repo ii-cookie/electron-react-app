@@ -2,7 +2,7 @@ import { faRotateLeft, faWheelchair } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import CircleButton from './CircleButton'
 
-const BFAButton = () => {
+const BFAButton: React.FC = () => {
   const [isBFA, setIsBFA] = useState(false)
 
   const handleBFAButtonClick = () => {

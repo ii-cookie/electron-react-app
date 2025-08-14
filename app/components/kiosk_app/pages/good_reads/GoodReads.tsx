@@ -149,7 +149,8 @@ const GoodReads = () => {
           </div>
         ))}
       </div>
-      <HomeButton /> <BFAButton />
+      <HomeButton />
+      <BFAButton />
     </div>
   )
 }

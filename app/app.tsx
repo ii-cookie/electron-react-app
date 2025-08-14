@@ -7,35 +7,52 @@ import DirectionEnquiry from './components/kiosk_app/pages/direction_enquiry/Dir
 import HighlightedProgrammes from './components/kiosk_app/pages/highlighted_programmes/HighlightedProgrammes'
 import GoodReads from './components/kiosk_app/pages/good_reads/GoodReads'
 import ContentHighlights from './components/kiosk_app/pages/content_highlights/ContentHighlights'
+import BFAButton from './components/kiosk_app/components/Layout/BFAButton'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
   },
   {
     path: '/DirectionEnquiry',
-    element: <DirectionEnquiry />,
+    element: (
+      <Layout>
+        <DirectionEnquiry />
+      </Layout>
+    ),
   },
   {
     path: '/HighlightedProgrammes',
-    element: <HighlightedProgrammes />,
+    element: (
+      <Layout>
+        <HighlightedProgrammes />
+      </Layout>
+    ),
   },
   {
     path: '/GoodReads',
-    element: <GoodReads />,
+    element: (
+      <Layout>
+        <GoodReads />
+      </Layout>
+    ),
   },
   {
     path: '/ContentHighlights',
-    element: <ContentHighlights />,
+    element: (
+      <Layout>
+        <ContentHighlights />
+      </Layout>
+    ),
   },
 ])
 
 export default function App() {
   // return <WelcomeKit />
-  return (
-    <Layout>
-      <RouterProvider router={router} />
-    </Layout>
-  )
+  return <RouterProvider router={router} />
 }
